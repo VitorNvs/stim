@@ -1,0 +1,142 @@
+@font-face {
+    font-family:"Nasa";
+    src: url("nasalization-rg.otf") format("opentype");
+}
+body {
+    /*background-color: #C5D8D1;*/
+    background-image: url("img/background.gif");
+    background-repeat: repeat;
+}
+.background {
+    background-color: #5e5b5b;
+}
+.flex-container {
+    display:flex;  
+    border:5px;
+    border-color: white;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.image {
+    margin: 20px;
+    border-radius: 5%;
+    transition-property: scale();
+    transition-duration: 0.2s;
+}
+.image:hover {
+    transform: scale(1.05);
+}
+.jogos_tela_inicial {
+    margin-top: 10px;
+    justify-content: center;
+}
+.btn-jogos {
+    margin-top: 100px;
+    margin-right:75px;
+    justify-content: right;
+}
+.barra-nav {
+    background-color: #333333;
+    padding-left: 150px;
+    align-items: center;
+}
+.nav-text {
+    color:white !important;
+}
+
+.rodape {
+    /*background-color: #094D92 !important;*/
+    background-color: #333333;
+    justify-content: center;
+}
+.rodape-text {
+    /*color: #C5D8D1 !important;*/
+    color: rgb(243, 243, 243);
+    line-height: 50px;
+}
+.centralize-text{
+    text-align: center;
+}
+#corpo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.login {
+    padding-bottom: 95px;
+}
+.cria-conta {
+    padding-bottom: 18px !important;
+}
+.alert {
+    text-align: center !important;
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+}
+.titulo_jogo {
+    color: rgb(219, 218, 218);
+    margin-left: 15px;
+}
+.carousel {
+    width:650px !important;
+    height:350px !important;
+}
+.compra {
+    background-color: darkgrey;
+    padding: 10px;
+    padding-left: 20px;
+}
+.preco-compra {
+    margin-left:470px;
+    padding-left: 10px;
+    padding-right: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.botao-compra {
+    transform: translateX(-2px);
+}
+
+.barra-pesquisa { 
+    transform: translate(800px);
+    margin-bottom: 10px;
+}
+#titulo-inicio {
+    text-align: center;
+    font-size:120px;
+    font-family: 'Nasa', 'Times New Roman';
+    color: orange;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.texto-nasa {
+    margin-bottom: 20px;
+    font-family: 'Nasa', 'Times New Roman';
+    color: orange;
+}
+.stim-nav {
+    font-family: 'Nasa', 'Times New Roman';
+    transform: translateX(-110px)
+}
+.carrinho {
+    margin-left: 1100px;
+    transform: translateY(-48px)
+}
+.titulo {
+    text-align: center;
+}
+#titulo-jogos {
+    text-align:center;
+    font-size:60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#jogos {
+    margin-top:50px;
+}
+#pagina-user {
+    color:white !important;
+    margin-left:50px;
+}
+.botao-perfil {
+    flex-direction: row-reverse;
+}

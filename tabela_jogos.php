@@ -2,8 +2,8 @@
 <?php 
 $search = $_GET['search'];
 $pag = $_GET['pag'];
-$qtd_pag = 5 * $pag;
-$inicio = $qtd_pag - 5;
+$qtd_pag = 7 * $pag;
+$inicio = $qtd_pag - 7;
 
 if($search == 0){
     $sql1 = "select * from jogos ORDER BY nome LIMIT $inicio,$qtd_pag"; 

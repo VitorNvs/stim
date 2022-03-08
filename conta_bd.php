@@ -31,7 +31,6 @@
             }
             
             
-        /*   
             $script=<<<FIM
                 insert into usuario(login,apelido,senha,email,nascimento) 
                 values ('$login','$apelido','$senhacript','$email','$nascimento');
@@ -46,7 +45,6 @@
             else{
                 echo "Um erro ocorreu na criação da sua conta.";
             }
-        */ 
         }
     ?>
 <?php include "footer.php"?>

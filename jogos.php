@@ -16,7 +16,7 @@
                     $nome = $tupla['nome'];
                     $descricao = $tupla['descricao'];
                     $preco = $tupla['preco'];
-                    echo"<a href='http://localhost/Projeto_site/pagina_jogo.php?id=$game_id'>";
+                    echo"<a href='pagina_jogo.php?id=$game_id'>";
                     echo "<img src='$imagem' class='image' width='250px' height='250px'>";
                     echo"</a>";
                     

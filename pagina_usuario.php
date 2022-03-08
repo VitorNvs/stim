@@ -46,7 +46,7 @@
                                 while($tupla){
                                     $imagem = $tupla['imagem'];
                                     $game_id = $tupla['game_id'];
-                                    echo"<a href='http://localhost/Projeto_site/pagina_jogo.php?id=$game_id'>";
+                                    echo"<a href='pagina_jogo.php?id=$game_id'>";
                                     echo "<img src='$imagem' class='image' width='100px' height='100px'>";
                                     echo"</a>";
                                     

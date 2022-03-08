@@ -15,7 +15,7 @@
             if (!in_array($game_id, $_SESSION['carrinho'])){
                 $_SESSION['carrinho'][] = $game_id;
                 $_SESSION['itens_carrinho']++;
-                header("location:http://localhost/Projeto_site/carrinho.php?id=$game_id");
+                header("location:carrinho.php?id=$game_id");
             }
         } 
         ?>
@@ -53,7 +53,7 @@
                 echo "<td class='table-dark'>$nome</td>";
                 echo "<td class='table-dark'>$preco</td>";
                 echo "<td class='table-dark'><img src='$img' width=120px></td>";
-                echo "<td class='table-dark'><a href='http://localhost/Projeto_site/deletar_carrinho.php?delete=0?id=$game_id'><button class='btn btn-danger' >Deletar</button></a>";
+                echo "<td class='table-dark'><a href='deletar_carrinho.php?delete=0?id=$game_id'><button class='btn btn-danger' >Deletar</button></a>";
                 echo "</tr>";
     
 
@@ -63,7 +63,7 @@
                 echo "</tbody>";
                 echo "</table>";
                 echo "<a href='comprar_jogos.php'><button class='btn btn-success'>Finalizar compra</button></a>";
-                echo "<a href='http://localhost/Projeto_site/deletar_carrinho.php?delete=1'><button class='btn btn-danger' >Deletar</button></a>";
+                echo "<a href='deletar_carrinho.php?delete=1'><button class='btn btn-danger' >Deletar</button></a>";
             }
         }
         else{

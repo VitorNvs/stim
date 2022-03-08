@@ -51,7 +51,7 @@
   </nav>
   
   <div class="carrinho">
-    <a href="http://localhost/Projeto_site/carrinho.php">
+    <a href="carrinho.php">
       <button type="button" class="btn btn-secondary">
         Carrinho <span class="badge bg-success"><?=$_SESSION['itens_carrinho']?></span>
       </button>

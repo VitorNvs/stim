@@ -59,7 +59,7 @@
                         <div class="row justify-content-center">
                             <div class="col-3" style="transform:translateX(-137px)"> 
                                 <label for="data_lancamento" class="texto-nasa">Data de Lançamento</label>
-                                <input type="date" class="form-control" id="data_lancamento" name="data_lancamento" required>
+                                <input type="date" class="form-control" id="data_lancamento" name="data_lancamento">
                             </div>
                         </div> 
                         <div class="row justify-content-center">

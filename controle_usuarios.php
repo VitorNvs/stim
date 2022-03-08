@@ -35,14 +35,14 @@ else{
             $login = $tupla['login'];
             $apelido = $tupla['apelido'];
             $email = $tupla['email'];
-            $nasc = $tupla['nascimento'];
+            $admissao = $tupla['admissao'];
             
             echo "<tr>";
             echo "<td class='table-dark'>$id_usuario</td>";
             echo "<td class='table-dark'>$login</td>";
             echo "<td class='table-dark'>$apelido</td>";
             echo "<td class='table-dark'>$email</td>";
-            echo "<td class='table-dark'>$nasc</td>";
+            echo "<td class='table-dark'>$admissao</td>";
             echo "</tr>";
 
             

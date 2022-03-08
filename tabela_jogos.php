@@ -1,10 +1,12 @@
 <?php include "header.php"?>
 <?php 
 $search = $_GET['search'];
-
+$pag = $_GET['pag'];
+$qtd_pag = 5 * $pag;
+$inicio = $qtd_pag - 5;
 
 if($search == 0){
-    $sql1 = "select * from jogos ORDER BY nome"; 
+    $sql1 = "select * from jogos ORDER BY nome LIMIT $inicio,$qtd_pag"; 
     $sql2 = "";
 }
 else if($search == 1){
@@ -18,13 +20,10 @@ $consulta = mysqli_query($link, $sql1);
 if($consulta){
     $tupla = mysqli_fetch_assoc($consulta);
     ?>
-    <form action="http://localhost/Projeto_site/tabela_jogos.php?search=1" method="POST">
+    <form action="tabela_jogos.php?search=1" method="POST">
         <div class="row">
             <div class="col-2 barra-pesquisa">
                 <input type='text' class='form-control' name="busca" id="search-bar">
-            </div>
-            <div class="col-1 barra-pesquisa">
-                <button type="submit">Pesquisar</button>
             </div>
         </div>
     </form>
@@ -50,9 +49,9 @@ if($consulta){
             $nome = $tupla['nome'];
             $preco = $tupla['preco'];
             $des = $tupla['desenvolvedora'];
-            echo "<a href='http://localhost/Projeto_site/pagina_jogo.php?id=$game_id'>";
+            echo "<a href='pagina_jogo.php?id=$game_id'>";
             echo "<tr>";
-            echo "<td class='table-dark'><a href='http://localhost/Projeto_site/pagina_jogo.php?id=$game_id'><img src='$imagem' width=120px></a></td>";
+            echo "<td class='table-dark'><a href='pagina_jogo.php?id=$game_id'><img src='$imagem' width=120px></a></td>";
             echo "<td class='table-dark'>$nome</td>";
             echo "<td class='table-dark'>$des</td>";
             echo "<td class='table-dark'>R$$preco,00</td>";
@@ -74,9 +73,9 @@ if($consulta){
                     $nome = $tupla['nome'];
                     $preco = $tupla['preco'];
                     $des = $tupla['desenvolvedora'];
-                    echo "<a href='http://localhost/Projeto_site/pagina_jogo.php?id=$game_id'>";
+                    echo "<a href='pagina_jogo.php?id=$game_id'>";
                     echo "<tr>";
-                    echo "<td class='table-dark'><a href='http://localhost/Projeto_site/pagina_jogo.php?id=$game_id'><img src='$imagem' width=120px></a></td>";
+                    echo "<td class='table-dark'><a href='pagina_jogo.php?id=$game_id'><img src='$imagem' width=120px></a></td>";
                     echo "<td class='table-dark'>$nome</td>";
                     echo "<td class='table-dark'>$des</td>";
                     echo "<td class='table-dark'>R$$preco</td>";
@@ -85,6 +84,18 @@ if($consulta){
                     $tupla = mysqli_fetch_assoc($consulta);
                 }
             }
+        }
+        else{
+            ?>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                    
+                    <li class="page-item"><a class="page-link" href="tabela_jogos.php?search=0&pag=1">1</a></li>
+                    <li class="page-item"><a class="page-link" href="tabela_jogos.php?search=0&pag=2">2</a></li>
+    
+                </ul>
+            </nav>
+            <?php
         }
         echo "</tbody>";
         echo "</table>";

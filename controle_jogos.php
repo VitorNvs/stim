@@ -49,7 +49,7 @@ else{
             echo "<td class='table-dark'><img src='$img' width=120px></td>";
             echo "<td class='table-dark'>$des</td>";
             echo "<td class='table-dark'>$dis</td>";
-            echo "<td class='table-dark'><a href='http://localhost/Projeto_site/editar_jogo.php?id=$game_id'><button class='btn btn-success'>Editar</button></a><a href='#'><button class='btn btn-danger'>Deletar</button></a></td>";
+            echo "<td class='table-dark'><a href='editar_jogo.php?id=$game_id'><button class='btn btn-success'>Editar</button></td>";
             echo "</tr>";
 
             
@@ -58,7 +58,7 @@ else{
             }
             echo "</tbody>";
             echo "</table>";
-            echo "<a href='http://localhost/Projeto_site/adicionar_jogo.php'><button class='btn btn-primary'>Adicionar Jogo</button></a>";
+            echo "<a href='adicionar_jogo.php'><button class='btn btn-primary'>Adicionar Jogo</button></a>";
         }
     }
     else{

@@ -12,7 +12,7 @@
             <p style="color:red;font-size:15px;text-align:center;">Obs.: Este é um site com objetivos de aprendizagem, portanto nenhum produto é vendido e não se deve utilizar informações pessoais reais.</p>
             
             <div class='flex-container btn-jogos'>
-                <a href="http://localhost/Projeto_site/tabela_jogos.php?search=0"><button class='btn btn-info'>Ver todos os jogos</button></a>
+                <a href="tabela_jogos.php?search=0&pag=1"><button class='btn btn-info'>Ver todos os jogos</button></a>
             </div>
             
             <?php include "jogos.php"?>

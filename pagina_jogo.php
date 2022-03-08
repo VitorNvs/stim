@@ -56,6 +56,7 @@
                 <p style="color:white; font-size:14px;"> <?=$tupla['descricao']?> </p>
                 <p style="color:#c0bebe; font-size:15px;">Desenvolvedora: <b><?=$tupla['desenvolvedora']?></b> </p>
                 <p style="color:#c0bebe; font-size:15px;">Distribuidora: <b><?=$tupla['distribuidora']?> </b></p>
+                <p style="color:#c0bebe; font-size:15px;">Data de Lançamento: <b><?=$tupla['data_lancamento']?> </b></p>
             </div> 
         </div> 
         <br> 
@@ -74,7 +75,7 @@
                             if($consulta2){
                                 $tupla2 = mysqli_fetch_assoc($consulta2);
                                 if(!$tupla2){
-                                    echo "<a href='http://localhost/Projeto_site/carrinho.php?id=$game_id'><button type='button' class='btn btn-success botao-compra'>Comprar</button></a>";
+                                    echo "<a href='carrinho.php?id=$game_id'><button type='button' class='btn btn-success botao-compra'>Comprar</button></a>";
                                 }
                                 else{
                                     echo "<button type='button' class='btn btn-secondary botao-compra'>Comprado</button>";
@@ -82,7 +83,7 @@
                             }
                         }
                         else{
-                            echo "<a href='http://localhost/Projeto_site/login.php'><button type='button' class='btn btn-success botao-compra'>Comprar</button></a>";
+                            echo "<a href='login.php'><button type='button' class='btn btn-success botao-compra'>Comprar</button></a>";
                         }
                         
                         ?>
